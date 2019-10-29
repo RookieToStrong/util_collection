@@ -13,7 +13,7 @@ import java.util.zip.ZipFile;
 /**
  * 功能说明:
  *
- * @author maonb
+ * @author Rookie
  */
 public class Decompress {
 
