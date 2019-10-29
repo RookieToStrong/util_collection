@@ -122,14 +122,10 @@ public class Decompress {
 
     public static void main(String[] args) {
         try {
-//            List<String> list = decompressZip("D:\\测试\\压缩文件\\20191011.zip",null);
-//            list.stream().forEach(a-> System.out.println(a));
-//            List<String> rarList = unRar("D:\\测试\\压缩文件\\20191011.rar",null);
-//            rarList.stream().forEach(a-> System.out.println(a));
-            String path = "D:\\测试\\压缩文件\\20191011.zip";
-            path = path.replace("\\","/");
-            System.out.println(path.substring(path.lastIndexOf("/")+1));
-            System.out.println(path.substring(0,path.lastIndexOf("/")));
+            List<String> list = decompressZip("D:\\测试\\压缩文件\\20191011.zip",null);
+            list.stream().forEach(a-> System.out.println(a));
+            List<String> rarList = unRar("D:\\测试\\压缩文件\\20191011.rar",null);
+            rarList.stream().forEach(a-> System.out.println(a));
         } catch (Exception e) {
             e.printStackTrace();
         }
