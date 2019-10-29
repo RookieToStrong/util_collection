@@ -11,7 +11,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
 /**
- * 功能说明:
+ * 功能说明: zip与rar压缩包解压工具
  *
  * @author Rookie
  */
@@ -95,6 +95,7 @@ public class Decompress {
             while(fh != null){
                 if(!fh.isDirectory()){
                     try{
+                        //解决rar压缩包内文件名为中文乱码问题
                         String fileName = fh.getFileNameW().isEmpty() ? fh.getFileNameString() : fh.getFileNameW();
                         String fileDir = destDir + File.separator + fileName;
                         fileDir = fileDir.replace("\\","/");
